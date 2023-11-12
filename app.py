@@ -1,14 +1,11 @@
 from flask import Flask, render_template, Response, jsonify
 import cv2
-import numpy as np
 from numpy import expand_dims
 from keras_facenet import FaceNet
-from imutils.video import VideoStream
-import time
 import joblib
 import threading
 
-app = Flask(__name__)
+app = Flask("Rexnition")
 
 # Global variables for recognition control
 recognize_status = {'status': 'stopped'}
