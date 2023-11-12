@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center mb-3">
+                <div>
+                    <h1>About Rexnition</h1>
+                </div>
+            </div>
+            <p>Rexnition is a real-time facial expression recognition application. It utilizes advanced computer vision and machine learning techniques to analyze and interpret human emotions from live webcam video. The app can identify seven primary facial expressions: Happy, Sad, Angry, Surprise, Fear, Disgust, and Neutral.</p>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Technologies Used:</h2>
+                <ul>
+                    <li>Haar Cascade: Rexnition uses Haar Cascade face detection to identify faces in the video stream.</li>
+                    <li>FaceNet: FaceNet is employed for face embedding, which extracts facial features and patterns from detected faces.</li>
+                    <li>Support Vector Machine (SVM): An SVM model is used to classify facial expressions based on the embedded features.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>How to Use Rexnition:</h2>
+                <ol>
+                    <li>Start by clicking the 'Home' button in the top navigation bar.</li>
+                    <li>You will see the 'Start Webcam' button on the 'Home' page. Click it to initiate access to your camera.</li>
+                    <li>Grant the necessary camera permissions if prompted by your browser.</li>
+                    <li>Once the camera is started, you'll find the 'Start Recognition' button. Click it to begin recognizing facial expressions in real-time.</li>
+                    <li>Please wait for a brief moment while the program loads.</li>
+                    <li>The video feed from your webcam will display, and any detected faces will be outlined with the predicted emotions and their probabilities.</li>
+                    <li>To stop recognition, click the 'Stop Recognition' button.</li>
+                    <li>You can switch back to the 'About' page to learn more about the app.</li>
+                </ol>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

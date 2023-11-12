@@ -1,0 +1,11 @@
+#panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+  
+  #panel {
+    display: none;
+  }
